@@ -1,14 +1,7 @@
 package com.yaba.monbudget.controller;
 
-import com.yaba.monbudget.dto.UserAppDto;
-import com.yaba.monbudget.model.UserApp;
-import com.yaba.monbudget.service.UserAppService;
-import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 import static com.yaba.monbudget.constant.Constant.BASE_URL;
 
@@ -16,7 +9,7 @@ import static com.yaba.monbudget.constant.Constant.BASE_URL;
 @Tag(name = "Api des utilisateurs de l'Application")
 @RequestMapping(BASE_URL + "/users")
 public class UserAppController {
-    @Autowired
+ /*   @Autowired
     private  UserAppService userAppService;
 
     @Operation(summary = "Endpoint pour lister tous les utilisateurs")
@@ -39,7 +32,7 @@ public class UserAppController {
     @PatchMapping(path = "/{id}")
     public UserApp setBalance(@PathVariable Long id,@RequestBody double balance){
         return userAppService.setBalance(id, balance);
-    }
+    }*/
 
 
 }
